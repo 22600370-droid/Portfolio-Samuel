@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Portfólio de Samuel — Desenvolvedor Front-end e Web.">
+  <title>Samuel | Portfólio</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="header">
+    <nav class="nav" aria-label="Navegação principal">
+      <a href="#inicio">Início</a>
+      <a href="#sobre">Sobre mim</a>
+      <a href="#skills">Skills</a>
+      <a href="#projetos">Projetos</a>
+      <a href="#contato">Contato</a>
+    </nav>
+
+    <div class="header-actions">
+     
+    <a class="curriculo-link" href="curriculo.pdf" target="_blank">
+  Meu Currículo
+</a>
+      <button id="tema" type="button" aria-label="Ativar modo escuro" title="Alternar tema">🌙</button>
+    </div>
+  </header>
+
+  <main>
+    <section id="inicio" class="hero">
+      <div class="hero-content">
+        <p class="hero-intro">Olá, prazer! Eu sou o</p>
+      <h1 class="nome">
+    SAMUEL
+    <span>(.Dev)</span>
+</h1>
+        <p class="hero-role">
+          Sou <strong id="digitando" data-frases="Desenvolvedor Front-end|Desenvolvedor Web|UI Designer|Dev De jogos|Estudante de TI"></strong><span class="cursor" aria-hidden="true">|</span>
+        </p>
+        <a class="botao" href="#projetos">Ver projetos</a>
+      </div>
+    </section>
+
+    <section id="sobre" class="secao revelar">
+      <h2>Sobre mim</h2>
+      <p>
+        Olá, prazer! Sou Samuel, estudante de Tecnologia da Informação na Cotemig,
+        com foco em desenvolvimento Front-end e Web. Tenho conhecimentos em HTML,
+        CSS e JavaScript e venho desenvolvendo projetos para aprimorar minhas
+        habilidades em programação, design e desenvolvimento de interfaces.
+      </p>
+      <p>
+        Busco constantemente aprender novas tecnologias e transformar ideias em
+        projetos funcionais, responsivos e visualmente atrativos.
+      </p>
+    </section>
+
+    <section id="skills" class="secao revelar">
+      <h2>Skills</h2>
+      <ul class="skills-list">
+        <li>HTML</li>
+        <li>CSS</li>
+        <li>JavaScript</li>
+        <li>Git</li>
+        <li>GitHub</li>
+        <li>UI Design</li>
+        <li>Responsividade</li>
+      </ul>
+    </section>
+
+    <section id="projetos" class="secao revelar">
+      <h2>Projetos</h2>
+
+      <article class="card">
+        <div>
+          <h3>Canddius Gourmet</h3>
+          <p>Landing page de uma marca de café premium, com foco em apresentação de produtos, identidade visual e experiência sofisticada.</p>
+        </div>
+        <div class="card-actions">
+          <button class="link-button" type="button" data-titulo="Canddius Gourmet" data-detalhes="Landing page de uma marca de café premium, desenvolvida com foco em identidade visual, apresentação de produtos e experiência do usuário.">Detalhes</button>
+          <a class="link-button" href="https://22600370-droid.github.io/Candidius-Gourmet/" target="_blank" rel="noopener noreferrer">Ver projeto</a>
+        </div>
+      </article>
+
+      <article class="card">
+        <div>
+          <h3>Rooftop Restaurant</h3>
+          <p>Site de restaurante sofisticado com apresentação do menu, galeria, informações do estabelecimento e opções de reserva.</p>
+        </div>
+        <div class="card-actions">
+          <button class="link-button" type="button" data-titulo="Rooftop Restaurant" data-detalhes="Site de restaurante sofisticado, com apresentação do menu, galeria, informações do estabelecimento e sistema de reserva.">Detalhes</button>
+          <a class="link-button" href="https://22600370-droid.github.io/RestaurantRooftop/" target="_blank" rel="noopener noreferrer">Ver projeto</a>
+        </div>
+      </article>
+
+      <article class="card">
+        <div>
+          <h3>Em breve...</h3>
+          <p>Novos projetos de desenvolvimento web serão adicionados aqui.</p>
+        </div>
+        <div class="card-actions">
+          <button class="link-button" type="button" data-titulo="Em breve" data-detalhes="Este projeto ainda está em desenvolvimento. Em breve novas informações estarão disponíveis.">Detalhes</button>
+        </div>
+      </article>
+    </section>
+
+    <section id="github" class="secao revelar">
+      <h2>GitHub</h2>
+      <p>Confira meus projetos e meu código.</p>
+      <a class="botao" href="https://github.com/samuelcandidosilva1-create" target="_blank" rel="noopener noreferrer">Abrir meu GitHub</a>
+    </section>
+
+    <section id="contato" class="secao revelar">
+      <h2>Contato</h2>
+      <form id="form" novalidate>
+        <label for="nome">
+          Nome
+          <input id="nome" name="nome" type="text" autocomplete="name" maxlength="80" required>
+        </label>
+
+        <label for="telefone">
+          Telefone
+          <input id="telefone" name="telefone" type="tel" inputmode="numeric" autocomplete="tel" placeholder="(31) 99999-9999" maxlength="15" required>
+        </label>
+
+        <label for="email">
+          E-mail
+          <input id="email" name="email" type="email" autocomplete="email" maxlength="120" required>
+        </label>
+
+        <label for="mensagem">
+          Mensagem
+          <textarea id="mensagem" name="mensagem" rows="5" maxlength="500" required></textarea>
+        </label>
+
+        <div class="form-footer">
+          <span id="contador" class="contador">0/500</span>
+          <p id="erro" role="alert" aria-live="polite"></p>
+        </div>
+
+        <button class="botao" type="submit">Enviar mensagem</button>
+      </form>
+    </section>
+  </main>
+
+  <footer>
+    <p>Samuel · Desenvolvedor Front-end &amp; Web</p>
+    <p><a href="mailto:samuelcandidosilva1@gmail.com">samuelcandidosilva1@gmail.com</a> · <a href="tel:+553196212567">(31) 9621-2567</a></p>
+  </footer>
+
+  <dialog id="modal" aria-labelledby="modal-titulo">
+    <div class="modal-content">
+      <button id="fechar-modal" class="modal-close" type="button" aria-label="Fechar">&times;</button>
+      <h3 id="modal-titulo"></h3>
+      <p id="modal-texto"></p>
+      <button id="modal-ok" class="botao" type="button">Fechar</button>
+    </div>
+  </dialog>
+
+  <script src="script.js" defer></script>
+</body>
+</html>
